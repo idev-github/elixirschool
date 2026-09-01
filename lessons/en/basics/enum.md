@@ -240,7 +240,7 @@ iex> Enum.map([1,2,3], fn number -> number + 3 end)
 [4, 5, 6]
 ```
 
-Now we implement the capture operator (&); capturing each iterable of the list of numbers ([1,2,3]) and assign each iterable to the variable &1 as it is passed through the mapping function.
+Now we implement the capture operator (&); capturing each element of the enumerable list of numbers ([1,2,3]) and assigning each element to the variable &1 as it is passed through the mapping function.
 
 ```elixir
 iex> Enum.map([1,2,3], &(&1 + 3))
